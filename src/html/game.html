@@ -19,7 +19,7 @@
            
         </div>
         <div id="lobby" hidden>
-            <ul id="messages">
+            <ul style="list-style: none;" id="messages">
 
             </ul>
             <form action="" method="post" id="startGameForm">
@@ -28,22 +28,31 @@
             
         </div>
         <div id="game" hidden>
-            <form action="" method="post" id="gameOptions">
-                <button>Hit</button>
-                <button>Stand</button>
-                <button>Double</button>
-                <button>Split</button>
-            </form>
-            <div id="playerstate">
+            
+            <button id="hitBTN">Hit</button>
+            <button id="standBTN">Stand</button>
+            <button id="doubleBTN">Double</button>
+            <button id="splitBTN">Split</button>
+            
+            <!-- <div id="playerstate">
                 <p id="playerinfo"></p>
-            </div>
+            </div> -->
     
-            <div id="gamestate">
+            <!-- <div id="gamestate">
                 <p id="gameinfo"></p>
-            </div>
+            </div>  -->
 
             <div id="currentUserState">
+                Current player:
                 <p id="currentUser"></p>
+                <button id="newRoundBTN" hidden>New round</button>
+            </div>
+
+            <div id="Players">
+                <h1>Spelers in deze match</h1>
+                <div id="player" style="display: grid; grid-auto-flow: column;">
+                    
+                </div>
             </div>
         </div>
         

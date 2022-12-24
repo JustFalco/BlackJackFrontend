@@ -1,5 +1,7 @@
 import '../../style.css'
 
+var url = "https://localhost:7119";
+
 var RegisterForm = document.getElementById("RegisterForm")
 
 RegisterForm.addEventListener("submit", (event) => {
@@ -39,6 +41,7 @@ async function Register() {
 
     if (response.status == 200) {
         document.getElementById("forms").hidden = true
+        window.location.replace("/");
         
     } else {
         document.getElementById("errors").innerText += response.status + ": " + response.statusText
